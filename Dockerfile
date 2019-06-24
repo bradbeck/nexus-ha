@@ -9,6 +9,7 @@ RUN mkdir ${NEXUS_DATA}/blobs \
   && chown -R nexus:nexus ${NEXUS_DATA} \
   && echo "nexus.clustered = true" >> ${NEXUS_HOME}/etc/nexus-default.properties \
   && echo "nexus.blobstore.provisionDefaults = true" >> ${NEXUS_HOME}/etc/nexus-default.properties \
-  && echo "nexus.skipDefaultRepositories = false" >> ${NEXUS_HOME}/etc/nexus-default.properties
+  && echo "nexus.skipDefaultRepositories = false" >> ${NEXUS_HOME}/etc/nexus-default.properties \
+  && echo "nexus.hazelcast.discovery.isEnabled = true" >> ${NEXUS_HOME}/etc/nexus-default.properties
 
 USER nexus
