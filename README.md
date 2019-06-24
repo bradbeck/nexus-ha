@@ -1,4 +1,4 @@
-# bradbeck/nexus-ha
+[![DockerHub Badge](http://dockeri.co/image/bradbeck/nexus-ha)](https://hub.docker.com/r/bradbeck/nexus-ha/)
 
 A Dockerfile for Sonatype Nexus Repository Manager 3 ready for HA.
 
